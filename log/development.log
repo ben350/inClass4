@@ -838,3 +838,645 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered /home/rwaski/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered /home/rwaski/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /home/rwaski/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:08 -0800
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 14:09:22 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-02 22:09:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 577ms (Views: 559.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:09:02 -0400
+
+
+Started GET "/article/new" for 127.0.0.1 at 2015-03-02 22:09:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/article/new"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.8ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-03-02 22:09:49 -0400
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0xafed210@/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (51.9ms)
+  Rendered articles/new.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 98ms (Views: 80.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:07 -0400
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "article"=>{"title"=>"ayy", "text"=>"ayy lmao"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0xafed210@/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "article"=>{"title"=>"ayy", "text"=>"ayy lmao"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered articles/_form.html.erb (1.5ms)
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:40 -0400
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-03-02 22:10:45 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "article"=>{"title"=>"ayyasdfaks", "text"=>"ayy lmao"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (48.9ms)[0m  [1mINSERT INTO "articles" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-03-03 02:10:45.472684"], ["text", "ayy lmao"], ["title", "ayyasdfaks"], ["updated_at", "2015-03-03 02:10:45.472684"]]
+  [1m[35m (303.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 368ms (ActiveRecord: 352.4ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-03-02 22:10:45 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?  [["article_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (35.9ms)
+  Rendered articles/show.html.erb within layouts/application (77.2ms)
+Completed 200 OK in 113ms (Views: 107.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:10:46 -0400
+
+
+Started POST "/articles/3/comments" for 127.0.0.1 at 2015-03-02 22:11:00 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "comment"=>{"commenter"=>"qweqweqwead", "body"=>"asdasd"}, "commit"=>"Create Comment", "article_id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "comments" ("article_id", "body", "commenter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", 3], ["body", "asdasd"], ["commenter", "qweqweqwead"], ["created_at", "2015-03-03 02:11:00.879830"], ["updated_at", "2015-03-03 02:11:00.879830"]]
+  [1m[35m (343.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 348ms (ActiveRecord: 344.0ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?  [["article_id", 3]]
+  Rendered comments/_comment.html.erb (0.9ms)
+  Rendered comments/_form.html.erb (2.3ms)
+  Rendered articles/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:11:01 -0400
+
+
+Started DELETE "/articles/3/comments/2" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "article_id"=>"3", "id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT  "comments".* FROM "comments"  WHERE "comments"."article_id" = ? AND "comments"."id" = ? LIMIT 1  [["article_id", 3], ["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = ?  [["id", 2]]
+  [1m[36m (169.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 177ms (ActiveRecord: 170.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.4ms)
+  Rendered articles/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:31 -0400
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2015-03-02 22:14:34 -0400
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendered articles/_form.html.erb (41.4ms)
+  Rendered articles/edit.html.erb within layouts/application (42.1ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @article do |f| %>
+    2:  
+    3:   <% if @article.errors.any? %>
+    4:     <div id="error_explanation">
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___302954193_94751030'
+  app/views/articles/edit.html.erb:3:in `_app_views_articles_edit_html_erb__17872854_94768730'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.9ms)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2015-03-02 22:14:34 -0400
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendered articles/_form.html.erb (0.4ms)
+  Rendered articles/edit.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @article do |f| %>
+    2:  
+    3:   <% if @article.errors.any? %>
+    4:     <div id="error_explanation">
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___302954193_93490350'
+  app/views/articles/edit.html.erb:3:in `_app_views_articles_edit_html_erb__17872854_93425200'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-02 22:14:40 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/articles/3" for 127.0.0.1 at 2015-03-02 22:14:46 -0400
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 3]]
+  [1m[36m (190.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 194ms (ActiveRecord: 190.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:14:47 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-03-02 22:26:09 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.5ms)
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:26:09 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:26:12 -0400
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-03-02 22:28:46 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "article"=>{"title"=>"newarticle1", "text"=>"this is some text in the article\r\n"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "articles" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-03-03 02:28:46.619883"], ["text", "this is some text in the article\r\n"], ["title", "newarticle1"], ["updated_at", "2015-03-03 02:28:46.619883"]]
+  [1m[36m (404.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 408ms (ActiveRecord: 404.5ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 4]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.5ms)
+  Rendered articles/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:28:47 -0400
+
+
+Started POST "/articles/4/comments" for 127.0.0.1 at 2015-03-02 22:29:09 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "comment"=>{"commenter"=>"commenter1", "body"=>"hey, nice article!\r\n"}, "commit"=>"Create Comment", "article_id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "comments" ("article_id", "body", "commenter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", 4], ["body", "hey, nice article!\r\n"], ["commenter", "commenter1"], ["created_at", "2015-03-03 02:29:09.952117"], ["updated_at", "2015-03-03 02:29:09.952117"]]
+  [1m[36m (531.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 537ms (ActiveRecord: 531.8ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 4]]
+  Rendered comments/_comment.html.erb (0.3ms)
+  Rendered comments/_form.html.erb (1.5ms)
+  Rendered articles/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:10 -0400
+
+
+Started POST "/articles/4/comments" for 127.0.0.1 at 2015-03-02 22:29:33 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSGymU+VTMYfin53DVYBapYbpp8FZ/JWNippsdS3zJs=", "comment"=>{"commenter"=>"commenter2", "body"=>"generic comment1"}, "commit"=>"Create Comment", "article_id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "comments" ("article_id", "body", "commenter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", 4], ["body", "generic comment1"], ["commenter", "commenter2"], ["created_at", "2015-03-03 02:29:33.911144"], ["updated_at", "2015-03-03 02:29:33.911144"]]
+  [1m[36m (378.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 382ms (ActiveRecord: 378.8ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 4]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/_form.html.erb (1.6ms)
+  Rendered articles/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-02 22:29:34 -0400
